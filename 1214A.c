@@ -2,15 +2,15 @@
 #include<stdlib.h>
 
 int compare(const void *num1, const void *num2){
-	int n1 = *(int *)num1;
-	int n2 = *(int *)num2;
+    int n1 = *(int *)num1;
+    int n2 = *(int *)num2;
 
-	return (n1 < n2) - (n1 > n2);
+    return (n1 < n2) - (n1 > n2);
 }
 
 int main(){
-	int n;
-	int d, e;
+    int n;
+    int d, e;
 	int exchange[13];
 
 	scanf("%d", &n);
