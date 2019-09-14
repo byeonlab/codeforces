@@ -2,30 +2,24 @@
 #include<stdlib.h>
 
 int main(){
- 	int n;
-	int *arr, *dups;
-	int first_dup = 0, last_dup = 0;
-
+	int n;
+	int *a, *appearance;
+	
 	scanf("%d", &n);
-	arr = malloc(sizeof(int) * n);
-	dups = calloc(n , sizeof(int));
+	a = malloc(n * sizeof(int));
+	appearance = calloc(n, sizeof(int));
 
 	for(int i = 0; i < n; i++){
-		scanf("%d", arr + i);
+		scanf("%d", a + i);
 		for(int j = 0; j < i; j++){
-			if(arr[i] == arr[j]){
-				dups[i] == arr[i];
-				dups[j] = arr[j];
+			if(a[j] == a[i]){
+				appearance[i] += a[i];
+				a[i]
 			}
 		}
 	}
 
-	for(int i = 0; i < n; i++)
-		printf("%d,  ", dups[i]);
-
-	printf("\n");
 
 
-	return 0;
 
 }
