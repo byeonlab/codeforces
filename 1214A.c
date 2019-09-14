@@ -14,7 +14,7 @@ int main(){
 	int exchange[13];
 
 	scanf("%d", &n);
-	scanf("%d", &d);
+    scanf("%d", &d);
 	scanf("%d", &e);
 
 	exchange[0] = 1 * d; 
