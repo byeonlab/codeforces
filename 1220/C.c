@@ -15,11 +15,11 @@ int main(){
 
 		s[i] = (idx > minimum);
 		minimum = (minimum & -s[i]) + (idx & -!s[i]);
-	}
-
-	for(int i = 0; i < len; i++){
 		printf("%s\n", names[s[i]]);
 	}
+
+	//for(int i = 0; i < len; i++){
+	//}
 
 	return 0;
 }
