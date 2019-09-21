@@ -2,25 +2,24 @@
 #include<string.h>
 
 int main(){
-    char s[500000];
-    int alphabets[26] = {0};
+	char s[500001];
+	char names[2][5] = {"Mike", "Ann"};
+	int minimum = 0x4FFFFFFF;
+	int len;
 
-    scanf("%s", s);
+	scanf("%s", s);
+	len = strlen(s);
 
-    for(int i = 0; i < strlen(s); i++){
-       int lowers = 0;
-       for(int j = 0; j < alphabets[s[i] - 'a']; j++)
-           lowers += alphabets[j];
+	for(int i = 0; i < len; i++){
+		int idx = s[i] - 'a';
 
-       printf("i, lowers = %d, %d\n", i, lowers);
-       
-       if(lowers & 1)
-           printf("Ann\n");
-       else
-           printf("Mike\n");
+		s[i] = (idx > minimum);
+		minimum = (minimum & -s[i]) + (idx & -!s[i]);
+	}
 
-       alphabets[s[i] - 'a'] ++;
-    }
+	for(int i = 0; i < len; i++){
+		printf("%s\n", names[s[i]]);
+	}
 
-    return 0;
+	return 0;
 }
