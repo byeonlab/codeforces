@@ -18,8 +18,5 @@ int main(){
 		printf("%s\n", names[s[i]]);
 	}
 
-	//for(int i = 0; i < len; i++){
-	//}
-
 	return 0;
 }
