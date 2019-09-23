@@ -11,7 +11,8 @@ set comments=sl:/*,mb:\ *,elx:\ */
 set hlsearch
 set ignorecase
 set smartcase
-
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
 syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -22,7 +23,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nanotech/jellybeans.vim'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 color jellybeans
 let g:airline_powerline_fonts = 1
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
