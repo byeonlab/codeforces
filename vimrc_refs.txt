@@ -1,0 +1,3 @@
+http://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/
+https://blog.b1ue.sh/vim-ide/
+https://nolboo.kim/blog/2016/09/20/vim-plugin-manager-vundle/
