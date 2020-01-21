@@ -28,4 +28,4 @@ call vundle#end()
 
 color jellybeans
 let g:airline_powerline_fonts = 1
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
